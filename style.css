@@ -1,0 +1,81 @@
+:root {
+   --text-black: black;
+   --text-black-50: 50 rgba(0,0,0,0.5);
+   --text-white: white;
+   --text-white-50: 50 rgba(255,255,255,0.5);
+   --primary-1: #434CCC;
+   --primary-2: #F1B505;
+}
+
+body {
+   font-family: 'DM Sans', sans-serif;
+}
+
+.h1, .h2, .h3, .h4, .h5 {
+   font-family: 'DM Serif Display', serif;
+   font-weight: 400;
+}
+
+.h1 {
+   font-size: 72px;
+   line-height: 80px;
+}
+
+.h2 {
+   font-size: 56px;
+   line-height: 64px;
+}
+
+.h3 {
+   font-size: 40px;
+   line-height: 48px;
+}
+
+.h4 {
+   font-size: 24px;
+   line-height: 32px;
+}
+
+.h5 {
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.label {
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 16px;
+}
+
+.text-big {
+   font-size: 20px;
+   line-height: 32px;
+}
+
+.text {
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.text-grey {
+   font-size: 16px;
+   line-height: 24px;
+}
+
+.text-small {
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 24px;
+}
+
+.wrap {
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 0 15px;
+   width: 100%;
+}
+
+.hero {
+   background-color: var(--primary-1);
+}
