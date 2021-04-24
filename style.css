@@ -5,38 +5,36 @@
    --text-white-50: 50 rgba(255,255,255,0.5);
    --primary-1: #434CCC;
    --primary-2: #F1B505;
+   --gradient-1: linear-gradient(225deg, #FFC105 0%, #737CFF 100%);
 }
 
-body {
+body, .h5 {
    font-family: 'DM Sans', sans-serif;
 }
 
-.h1, .h2, .h3, .h4, .h5 {
-   font-family: 'DM Serif Display', serif;
+.h1, .h2, .h3, .h4 {
    font-weight: 400;
+   font-family: 'DM Serif Display', serif;
 }
 
 .h1 {
-   font-size: 72px;
-   line-height: 80px;
-}
-
-.h2 {
    font-size: 56px;
    line-height: 64px;
 }
 
-.h3 {
+.h2 {
    font-size: 40px;
    line-height: 48px;
 }
 
-.h4 {
+.h3, .h4 {
    font-size: 24px;
    line-height: 32px;
 }
 
 .h5 {
+   text-transform: uppercase;
+   letter-spacing: 0.3em;
    font-size: 16px;
    line-height: 24px;
 }
@@ -69,13 +67,197 @@ body {
    line-height: 24px;
 }
 
+.hero {
+   background-color: var(--primary-1);   
+   /* padding: 25px 15px env(safe-area-inset-bottom); */
+}
+
 .wrap {
    margin: 0 auto;
    max-width: 1200px;
-   padding: 0 15px;
    width: 100%;
 }
 
-.hero {
-   background-color: var(--primary-1);
+
+
+
+
+
+
+/******************************
+WORKING PROGRESS – KEEP CHANGING MY MIND
+*******************************/
+
+
+
+.header {
+   justify-content: space-between;
+}
+
+/* .header {
+   background-color: var(--primary-1);   
+   margin: 0 auto;
+   padding: 25px 15px env(safe-area-inset-bottom);
+   padding-bottom: 45px;
+} */
+
+.logo {
+   height: 17px;
+   width: 60px;
+   text-indent: 100%;
+   overflow: hidden;
+   float: left;
+}
+
+.menu {
+   height: 14px;
+   width: 20px;
+   float: right;
+}
+
+
+
+
+
+.btn-primary {
+   background-color: var(--primary-2);
+   border: none;
+   border-radius: 5px;
+   padding: 13px 55px;
+   text-align: center;
+   margin: 40px auto 198px;
+}
+
+.btn-secondary {
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   border-radius: 5px;
+   padding: 13px 55px;
+   text-align: center;
+   margin: 40px auto 198px;
+}
+
+.logo,
+.menu,
+.btn-primary {
+   color: var(--text-white);   
+}
+   
+.illo-dance {
+   height: 254px;
+   width: 354px;
+   margin: 0 auto;
+   /* padding-bottom: 25px; */
+}
+
+
+/******************************
+Mobile TBC
+*******************************/
+
+.intro {
+   background-color: var(--primary-2); 
+   padding-bottom: 80px; 
+}
+
+.tortillia {
+   width: 370px;
+}
+
+.filling {
+   background-color: var(--text-white);
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.297017);
+   padding: 30px;
+   border-radius: 5px;
+   
+}
+
+.icon-lrg {
+   /* background-image: var(--gradient-1); */ 
+   margin: 20px auto;
+   height: 126px;
+   width: 186px;
+}
+
+.illo-draw {
+   height: 274px;
+   width: 334px;
+}
+   
+.illo-laptop {
+   height: 224px;
+   width: 351px;
+}
+   
+.illo-walk {
+   height: 405px;
+   width: 252px;
+}
+
+.illo-cycle {
+   height: 303px;
+   width: 346px;
+} 
+
+@media (min-width: 376px) {
+   .h1 {
+      font-size: 72px;
+      line-height: 80px;
+   }
+   
+   .h2 {
+      font-size: 56px;
+      line-height: 64px;
+   }
+   
+   .h3 {
+      font-size: 40px;
+      line-height: 48px;
+   }
+   
+   .h4 {
+      font-size: 24px;
+      line-height: 32px;
+   }
+   
+   .hero {
+      
+   }
+   
+   
+   
+   
+   
+   .logo {
+      height: 28px;
+      width: 100px;
+   }
+   
+   .illo-dance {
+      width: 764px;
+      height: 550px;
+   }
+   
+   /******************************
+   Desktop TBC
+   *******************************/
+   
+   .illo-draw {
+      height: 315px;
+      width: 383px;
+   }
+      
+   .illo-laptop {
+      height: 297px;
+      width: 462px;
+   }
+      
+   .illo-walk {
+      height: 510px;
+      width: 317px;
+   }
+   
+   .illo-cycle {
+      height: 416px;
+      width: 474px;
+   } 
 }
