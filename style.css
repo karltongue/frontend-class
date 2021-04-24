@@ -125,7 +125,7 @@ WORKING PROGRESS – KEEP CHANGING MY MIND
    border-radius: 5px;
    padding: 13px 55px;
    text-align: center;
-   margin: 40px auto 198px;
+   margin: 40px auto;
 }
 
 .btn-secondary {
@@ -133,7 +133,7 @@ WORKING PROGRESS – KEEP CHANGING MY MIND
    border-radius: 5px;
    padding: 13px 55px;
    text-align: center;
-   margin: 40px auto 198px;
+   margin: 40px auto;
 }
 
 .logo,
@@ -147,6 +147,7 @@ WORKING PROGRESS – KEEP CHANGING MY MIND
    width: 354px;
    margin: 0 auto;
    padding-bottom: 25px;
+   margin-top: -20px;
 }
 
 
@@ -236,6 +237,8 @@ Mobile TBC
    .illo-dance {
       width: 764px;
       height: 550px;
+      padding-right: 100px;
+      margin-top: -20px;
    }
    
    /******************************
