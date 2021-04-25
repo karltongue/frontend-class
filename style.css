@@ -8,7 +8,11 @@
    --gradient-1: linear-gradient(225deg, #FFC105 0%, #737CFF 100%);
 }
 
-body, .h5 {
+a {
+   text-decoration: none;
+}
+   
+body {
    font-family: 'DM Sans', sans-serif;
 }
 
@@ -38,6 +42,11 @@ body, .h5 {
    font-size: 16px;
    line-height: 24px;
 }
+
+
+
+
+
 
 .label {
    font-weight: 700;
@@ -69,19 +78,32 @@ body, .h5 {
 
 .hero {
    background-color: var(--primary-1);   
-   /* padding: 25px 15px env(safe-area-inset-bottom); */
+   padding: 25px 0 env(safe-area-inset-bottom);
+   color: var(--text-white);  
 }
 
 .wrap {
    margin: 0 auto;
    max-width: 1200px;
    width: 100%;
+   padding: 0 15px;
 }
 
+.step {
+   padding-bottom: 6px;   
+}
 
+.skip {
+   padding-bottom: 18px;   
+}
 
+.jog {
+   padding-bottom: 26px;
+}
 
-
+.run {
+   padding-bottom: 100px;
+}
 
 
 /******************************
@@ -115,25 +137,20 @@ WORKING PROGRESS – KEEP CHANGING MY MIND
    float: right;
 }
 
-
-
-
-
-.btn-primary {
-   background-color: var(--primary-2);
+.btn {
    border: none;
    border-radius: 5px;
    padding: 13px 55px;
    text-align: center;
-   margin: 40px auto;
 }
 
-.btn-secondary {
+
+.primary {
+   background-color: var(--primary-2);
+}
+
+.secondary {
    border: 1px solid rgba(255, 255, 255, 0.3);
-   border-radius: 5px;
-   padding: 13px 55px;
-   text-align: center;
-   margin: 40px auto;
 }
 
 .logo,
@@ -146,8 +163,7 @@ WORKING PROGRESS – KEEP CHANGING MY MIND
    height: 254px;
    width: 354px;
    margin: 0 auto;
-   padding-bottom: 25px;
-   margin-top: -20px;
+   padding-bottom: 30px;
 }
 
 
