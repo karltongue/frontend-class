@@ -6,6 +6,37 @@
    --primary-1: #434CCC;
    --primary-2: #F1B505;
    --gradient-1: linear-gradient(225deg, #FFC105 0%, #737CFF 100%);
+   
+   --h1-size: 72px;
+   --h1-line: 80px;
+  
+   --h2-size: 56px;
+   --h2-line: 64px;
+   
+   --h3-size: 40px;
+   --h3-line: 48px;
+   
+   --h4-size: 24px;
+   --h4-line: 32px;
+   
+   --h5-size: 16px;
+   --h5-line: 24px;
+   --h5-space: 0.3em;
+   
+   --label-size: 12px;
+   --label-line: 16px;
+   --label-weight: 700;
+   
+   --text-big-size: 20px;
+   --text-big-line: 32px;
+   
+   --text-size: 16px;
+   --text-line: 24px;
+   --text-weight: 700;
+   
+   --text-small-size: 12px;
+   --text-small-line: 24px;
+   --text-weight: 700;
 }
 
 a {
@@ -14,72 +45,12 @@ a {
    
 body {
    font-family: 'DM Sans', sans-serif;
-}
-
-.h1, .h2, .h3, .h4 {
-   font-weight: 400;
-   font-family: 'DM Serif Display', serif;
-}
-
-.h1 {
-   font-size: 56px;
-   line-height: 64px;
-}
-
-.h2 {
-   font-size: 40px;
-   line-height: 48px;
-}
-
-.h3, .h4 {
-   font-size: 24px;
-   line-height: 32px;
-}
-
-.h5 {
-   text-transform: uppercase;
-   letter-spacing: 0.3em;
-   font-size: 16px;
-   line-height: 24px;
-}
-
-
-
-
-
-
-.label {
-   font-weight: 700;
-   font-size: 12px;
-   line-height: 16px;
-}
-
-.text-big {
-   font-size: 20px;
-   line-height: 32px;
-}
-
-.text {
-   font-weight: 700;
-   font-size: 16px;
-   line-height: 24px;
-}
-
-.text-grey {
-   font-size: 16px;
-   line-height: 24px;
-}
-
-.text-small {
-   font-weight: 700;
-   font-size: 12px;
-   line-height: 24px;
+   -webkit-font-smoothing: antialiased;
 }
 
 .hero {
    background-color: var(--primary-1);   
    padding: 25px 0 env(safe-area-inset-bottom);
-   color: var(--text-white);  
 }
 
 .wrap {
@@ -89,46 +60,35 @@ body {
    padding: 0 15px;
 }
 
-.step {
-   padding-bottom: 6px;   
-}
-
-.skip {
-   padding-bottom: 18px;   
-}
-
-.jog {
-   padding-bottom: 26px;
-}
-
-.run {
-   padding-bottom: 100px;
-}
-
-
-/******************************
-WORKING PROGRESS – KEEP CHANGING MY MIND
-*******************************/
-
-
-
-.header {
-   justify-content: space-between;
-}
-
-/* .header {
-   background-color: var(--primary-1);   
-   margin: 0 auto;
-   padding: 25px 15px env(safe-area-inset-bottom);
-   padding-bottom: 45px;
-} */
-
 .logo {
    height: 17px;
    width: 60px;
    text-indent: 100%;
-   overflow: hidden;
    float: left;
+   color: var(--text-white);
+}
+
+@media (min-width: 641px) {
+   .logo {
+      height: 28px;
+      width: 101px;
+   }
+}
+
+.main-header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   color: var(--text-white);
+   align-items: center;
+}
+
+.main-nav {
+   display: none;
+}
+
+.main-nav a:hover {
+   color: rgba(255,255,255,0.7);
 }
 
 .menu {
@@ -137,38 +97,129 @@ WORKING PROGRESS – KEEP CHANGING MY MIND
    float: right;
 }
 
+@media (min-width: 641px) {
+   .main-nav {
+      font-size: var(--text-size);
+      line-height: var(--text-line);
+      font-weight: var(--text-weight);
+      display: block;
+   }
+   
+   .link {
+      padding: 20px;
+      color: var(--text-white);
+   }
+   
+   .menu {
+      display: none;
+   }
+}
+
+.content {
+   color: var(--text-white);
+   padding: 32px 0;
+}
+
+@media (min-width: 641px) {
+   .content {
+      max-width: 50%;
+      padding: 100px 0 188px;
+      z-index: 1;
+   }
+}
+
+.subtitle {
+   font-size: var(--h5-size);
+   line-height: var(--h5-line);
+   letter-spacing: var(--h5-space);
+   text-transform: uppercase; 
+   margin-bottom: -30px;  
+}
+
+.title {
+   font-size: var(--h2-size);
+   line-height: var(--h2-line);
+   margin-bottom: 18px;   
+}
+
+@media (min-width: 641px) {
+   .title {
+      font-size: var(--h1-size);
+      line-height: var(--h1-line); 
+      margin-bottom: 40px;  
+   }
+}
+
+.heading {
+   font-family: 'DM Serif Display', serif;
+}
+
+.body {
+   font-size: var(--text-size);
+   line-height: var(--text-line);
+   font-weight: var(--text-weight);
+   margin-bottom: 25px;
+}
+
+@media (min-width: 641px) {
+   .body {
+      margin-bottom: 40px;
+   }
+}
+
 .btn {
    border: none;
    border-radius: 5px;
    padding: 13px 55px;
    text-align: center;
+   display: inline-block;
+   font-size: var(--text-size);
+   line-height: var(--text-line);
+   font-weight: var(--text-weight);
 }
-
 
 .primary {
    background-color: var(--primary-2);
+   margin-bottom: 20px;
 }
 
 .secondary {
    border: 1px solid rgba(255, 255, 255, 0.3);
-}
+   margin-left: 20px;
+} 
 
-.logo,
-.menu,
-.btn-primary {
-   color: var(--text-white);   
-}
-   
 .illo-dance {
-   height: 254px;
-   width: 354px;
-   margin: 0 auto;
+   /* height: 254px;
+   width: 354px; */
+   object-fit: contain;
    padding-bottom: 30px;
 }
 
+@media (min-width: 641px) {
+   .illo-dance {
+      /* width: 764px;
+      height: 550px; */
+      padding-bottom: 0;
+      max-width: 75%;
+      margin: 0 -12.5%;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /******************************
-Mobile TBC
+WORKING PROGRESS – INTRO
 *******************************/
 
 .intro {
@@ -200,10 +251,24 @@ Mobile TBC
    height: 274px;
    width: 334px;
 }
+
+@media (min-width: 641px) {
+   .illo-draw {
+      height: 315px;
+      width: 383px;
+   }
+}
    
 .illo-laptop {
    height: 224px;
    width: 351px;
+}
+   
+@media (min-width: 641px) {
+   .illo-laptop {
+      height: 297px;
+      width: 462px;
+   }
 }
    
 .illo-walk {
@@ -211,71 +276,19 @@ Mobile TBC
    width: 252px;
 }
 
+@media (min-width: 641px) {
+   .illo-walk {
+      height: 510px;
+      width: 317px;
+   }
+}
+
 .illo-cycle {
    height: 303px;
    width: 346px;
 } 
 
-@media (min-width: 376px) {
-   .h1 {
-      font-size: 72px;
-      line-height: 80px;
-   }
-   
-   .h2 {
-      font-size: 56px;
-      line-height: 64px;
-   }
-   
-   .h3 {
-      font-size: 40px;
-      line-height: 48px;
-   }
-   
-   .h4 {
-      font-size: 24px;
-      line-height: 32px;
-   }
-   
-   .hero {
-      
-   }
-   
-   
-   
-   
-   
-   .logo {
-      height: 28px;
-      width: 100px;
-   }
-   
-   .illo-dance {
-      width: 764px;
-      height: 550px;
-      padding-right: 100px;
-      margin-top: -20px;
-   }
-   
-   /******************************
-   Desktop TBC
-   *******************************/
-   
-   .illo-draw {
-      height: 315px;
-      width: 383px;
-   }
-      
-   .illo-laptop {
-      height: 297px;
-      width: 462px;
-   }
-      
-   .illo-walk {
-      height: 510px;
-      width: 317px;
-   }
-   
+@media (min-width: 641px) {
    .illo-cycle {
       height: 416px;
       width: 474px;
