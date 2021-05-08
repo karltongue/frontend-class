@@ -205,18 +205,13 @@ body {
    }
 }
 
-
-
-
-
-
 /******************************
-WORKING PROGRESS – PRELUDE
+INTRO
 *******************************/
 
 .intro {
    background-color: var(--primary-2); 
-   padding: 20px 0 64px; 
+   padding: 10px 0 64px; 
 }
 
 .focus {
@@ -259,23 +254,17 @@ WORKING PROGRESS – PRELUDE
 .filling {
    background-color: var(--text-white);
    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.297017);
-   padding: 30px;
-   /* padding: 30px 0 22px 30px; */
-   /* padding: 30px 30px 12px; */
    border-radius: 5px;
    margin-bottom: 16px;
 }
 
-/* .filling-top {
-   padding-left: 30px;
-   padding-right: 30px;
-   Padding-top: 30px;
+.top {
+   padding: 30px 30px 0;
 }
 
-.filling-bottom {
-   padding-left: 30px;
-   padding-bottom: 30px;
-} */
+.bottom {
+   padding: 0 0 30px 30px;
+}
 
 @media (min-width: 641px) {
    .filling {
@@ -295,20 +284,20 @@ WORKING PROGRESS – PRELUDE
    font-size: var(--h4-size);
    line-height: var(--h4-line); 
    padding-bottom: 16px;
+   max-width: 70%;
 }
 
 .body {
    font-size: var(--text-size);
    line-height: var(--text-line); 
    color: var(--text-black-50);
+   padding-bottom: 16px;
 }
 
 .line {
   border: 1px solid black;
-  margin: 18px 0 12px;
-  /* margin-bottom: 12px; */
+  margin-bottom: 16px;
   opacity: 0.1;
-   
 }
 
 .cta {
@@ -329,25 +318,28 @@ WORKING PROGRESS – PRELUDE
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /******************************
-WIP – ABOUT 
+ABOUT 
 *******************************/
 
 .about {
    background-color: background: rgba(67, 76, 204, 1); 
-   padding: 60px 0 190px; 
+   padding: 64px 0; 
 }
+
+@media (min-width: 641px) {
+   .about {
+      padding: 64px 0 190px;
+   }
+}
+
+
+
+
+
+
+
+
 
 .X1 {
    background: red;
@@ -361,14 +353,14 @@ WIP – ABOUT
    /* width: 334px;
    height: 274px; */
    object-fit: contain;
-   padding-bottom: 25px;
+   padding: 16px 0 40px;
 }
 
 .illo-laptop {
    /* width: 351px;
    height: 224px; */
    object-fit: contain;
-   padding-bottom: 25px;
+   padding: 70px 0 40px;
 }
 
 @media (min-width: 641px) {
@@ -376,11 +368,20 @@ WIP – ABOUT
       width: 383px;
       height: 315px;
    }
+   
    .illo-laptop {
       width: 462px;
       height: 297px;
    }
 }
+
+
+
+
+
+/******************************
+WORKING PROGRESS
+*******************************/
 
 .illo-walk {
    height: 405px;
