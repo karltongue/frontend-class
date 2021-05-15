@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5 {
 
 .intro {
    background-color: var(--primary-2); 
-   padding: 44px 0 60px; 
+   padding: 44px 0 64px; 
 }
 
 @media (min-width: 641px) {
@@ -380,10 +380,6 @@ h1, h2, h3, h4, h5 {
       padding: 64px 0 190px;
    }
 }
-
-
-
-
 
 .X1 {
    background: red;
