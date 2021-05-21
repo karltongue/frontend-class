@@ -25,104 +25,128 @@
       <img srcset="images/overlay-375.jpg 375w, images/overlay-1440.jpg" sizes="(max-width: 640px) 375px, 1440px" src="images/overlay-1440.jpg" alt="Frontend Class background" style="position: absolute; left: 50%; top: 0; transform: translateX(-50%); max-width: 1440px; opacity: 0.5">
       
       <section class="hero"> 
-         <div class="wrap split">
+         <div class="u-wrap hero__split">
             <header class="head"> 
-               <svg class="logo">
+               <svg class="head__logo">
                   <use xlink:href="/images/icons/sprite.svg#u_logo" alt="Logo" />
                </svg> 
-               <nav class="head-nav">
-                  <a href="/" class="link">About</a>
-                  <a href="/" class="link">Portfolio</a>
-                  <a href="/" class="link">Blog</a>
-                  <a href="/" class="link">Contact</a>
-                  <button class="btn secondary space">Sign up</button>
+               <nav class="head__nav">
+                  <a href="/" class="head__link">About</a>
+                  <a href="/" class="head__link">Portfolio</a>
+                  <a href="/" class="head__link">Blog</a>
+                  <a href="/" class="head__link">Contact</a>
+                  <button class="btn nav">Sign up</button>
                </nav>
-               <svg class="menu">
+               <svg class="head__menu">
                   <use xlink:href="/images/icons/sprite.svg#u_menu" alt="Menu" />
                </svg>
             </header>
-            <div class="content">
-               <div class="caption">Expetenda</div>
-               <h1 class="title serif">Duo veri eripuit honestatis</h1>
-               <p class="excerpt">Duo stet possim quaerendum eu, cum in invenire platonem. An animal assentior nam, sed qualisque deterruisset ea.</p>
+            <div class="hero__content">
+               <div class="hero__subtitle">Expetenda</div>
+               <h1 class="hero__title u-header">Duo veri eripuit honestatis</h1>
+               <p class="hero__body">Duo stet possim quaerendum eu, cum in invenire platonem. An animal assentior nam, sed qualisque deterruisset ea.</p>
                <button class="btn yellow">Explore</button>
             </div>
-            <img class="illo-dance" src="/images/illo-dance.png" alt="Illustration of three figures dancing to music" width="764" height="550">   
+            <img class="hero__illustration" src="/images/illo-dance.png" alt="Illustration of three figures dancing to music" width="764" height="550">   
          </div> 
       </section>
       
       <section class="intro">
-         <div class="wrap">
-            <div class="focus">
-               <h2 class="headline serif">Vivendo omnesque</h2>
-               <div class="lead">Eu minim movet quodsi eum. Et vim dolore epicurei, ut aeque postea nam, at posse dicta est.</div>
-            </div>
-            <div class="tortillia">
-               <div class="filling">
-                  <div class="top">
-                     <svg class="icon-lrg">
-                        <use xlink:href="/images/icons/sprite.svg#lrg_package" alt="Packaging icon" />
-                     </svg> 
-                     <h4 class="subhead serif">Quidam officiis</h4> 
-                     <div class="body">Pro ad ubique erroribus, in modo mutt sed. Suscipit, natum animal qui et.</div>
-                  </div>
-                  <div class="bottom"> 
-                     <hr class="line">
-                     <a href="/" class="cta">Learn more</a>
-                     <svg class="arrow-sml">
+         <div class="u-wrap">
+            <h2 class="intro__title u-header">Vivendo omnesque</h2>
+            <div class="intro__body">Eu minim movet quodsi eum. Et vim dolore epicurei, ut aeque postea nam, at posse dicta est.</div> 
+            <div class="intro__cards">
+               <div class="card">
+                  <svg class="card__icon">
+                     <use xlink:href="/images/icons/sprite.svg#lrg_package" alt="Packaging icon" />
+                  </svg> 
+                  <h4 class="card__title u-header">Quidam officiis</h4> 
+                  <div class="card__body">Pro ad ubique erroribus, in modo mutat sed. Suscipit, natum animal qui et.</div>
+                  <a href="/" class="card__link">Learn more
+                     <svg class="card__arrow">
                         <use xlink:href="/images/icons/sprite.svg#u_arrow_right" alt="Right arrow" />
-                     </svg>
-                  </div> 
-               </div> 
-               <div class="filling">
-                  <div class="top">
-                     <svg class="icon-lrg">
-                        <use xlink:href="/images/icons/sprite.svg#lrg_transport" alt="Trruck delivery icon" />
-                     </svg> 
-                     <h4 class="subhead serif">Mazim nemore</h4> 
-                     <div class="body">An mel everti invenire intellegam, legendos consequuntur eu sit.</div>
-                  </div>
-                  <div class="bottom"> 
-                     <hr class="line">
-                     <a href="/" class="cta">Learn more</a>
-                     <svg class="arrow-sml">
+                     </svg>   
+                  </a>
+               </div>
+               <div class="card">
+                  <svg class="card__icon">
+                     <use xlink:href="/images/icons/sprite.svg#lrg_transport" alt="Truck delivery icon" />
+                  </svg> 
+                  <h4 class="card__title u-header">Mazim nemore</h4> 
+                  <div class="card__body">An mel everti invenire intellegam, legendos consequuntur eu sit.</div>
+                  <a href="/" class="card__link">Learn more
+                     <svg class="card__arrow">
                         <use xlink:href="/images/icons/sprite.svg#u_arrow_right" alt="Right arrow" />
-                     </svg>
-                  </div> 
-               </div> 
-               <div class="filling">
-                  <div class="top">
-                     <svg class="icon-lrg">
-                        <use xlink:href="/images/icons/sprite.svg#lrg_24hrs" alt="24 hour circle icon" />
-                     </svg> 
-                     <h4 class="subhead serif">Idque maiestatis</h4> 
-                     <div class="body">Diam facilisi insolens per cu, eos malorum voluptaria ei.</div>
-                  </div>
-                  <div class="bottom"> 
-                     <hr class="line">
-                     <a href="/" class="cta">Learn more</a>
-                     <svg class="arrow-sml">
+                     </svg>   
+                  </a>
+               </div>
+               <div class="card">
+                  <svg class="card__icon">
+                     <use xlink:href="/images/icons/sprite.svg#lrg_24hrs" alt="24 hour circle icon" />
+                  </svg> 
+                  <h4 class="card__title u-header">Idque maiestatis</h4> 
+                  <div class="card__body">Diam facilisi insolens per cu, eos malorum voluptaria ei.</div>
+                  <a href="/" class="card__link">Learn more
+                     <svg class="card__arrow">
                         <use xlink:href="/images/icons/sprite.svg#u_arrow_right" alt="Right arrow" />
-                     </svg>
-                  </div> 
-               </div>   
+                     </svg>   
+                  </a>
+               </div>
             </div>
          </div>
       </section>
-       
+      
+      <section class="about">
+         <div class="u-wrap">
+            <div class="about__subtitle">Aliquip</div>
+            <h2 class="about__title u-header">Graece postea</h2>
+            <div class="about__body">Quo ex ocurreret quaerendum. Mel cu ancillae similique. Mei no ubique persecuti, at sit iusto aliquam interpretaris.</div>
+            
+            
+            <div class="about__xxxxx about__split">
+               <img class="xxxxx__illustration" src="/images/illo-draw.png" alt="Illustration of a figure drawing on a board" width="383" height="315">
+               <div class="">
+                  <h4 class="xxxxx__title u-header">Nemore facilisi mediocrem at duo</h4>
+                  <div class="xxxxx__body">Dicat eripuit accumsan ad est. Facer facilisi ius ei, ea has cetero argumentum, vel at fugit temporibus. Deseruisse definitionem his et, an has veri integre abhorreant, nam alii epicurei et.</div>
+                  <a href="/" class="xxxxx__link">Learn more
+                     <svg class="xxxxx__arrow">
+                        <use xlink:href="/images/icons/sprite.svg#u_arrow_right" alt="Right arrow" />
+                     </svg>   
+                  </a>
+               </div>   
+            </div>
+            <!-- <div class="about__xxxxx xxxxx__split">
+               <img class="xxxxx__illustration temp" src="/images/illo-laptop.png" alt="Illustration of a figure having breakfast and looking at a laptop" width="462" height="297">
+               <div class="">
+                  <h4 class="xxxxx__title u-header">Dolorem habemus mandamus ponderum</h4>
+                  <div class="xxxxx__body">Ea eos essent ornatus percipit, mea an persecuti pertinacia, te suas semper per. Et qui debet veritus, ei qui utroque luptatum sadipscing. His dolorem habemus mandamus et.</div>
+                  <a href="/" class="xxxxx__link">Learn more
+                     <svg class="xxxxx__arrow">
+                        <use xlink:href="/images/icons/sprite.svg#u_arrow_right" alt="Right arrow" />
+                     </svg>   
+                  </a>
+               </div>   
+            </div> -->  
+         </div>   
+      </section>      
+      
+      
+      
+      
+      
+      
       <!-- <section class="about"> 
-         
-         <div class="wrap">
+         <div class="u-wrap">
             <div class="focus">
                <div class="caption">Aliquip</div>
-               <h2 class="headline serif">Graece postea</h2>
+               <h2 class="headline u-header">Graece postea</h2>
                <div class="lead">Quo ex ocurreret quaerendum. Mel cu ancillae similique. Mei no ubique persecuti, at sit iusto aliquam interpretaris.</div>
             </div>
             
             <img class="illo-draw" src="/images/illo-draw.png" alt="Illustration of a figure drawing on a board" width="383" height="315">
             
             <div class="X1">
-               <h4 class="subhead serif">Nemore facilisi mediocrem at duo</h4>
+               <h4 class="subhead u-header">Nemore facilisi mediocrem at duo</h4>
                <div class="body">Dicat eripuit accumsan ad est. Facer facilisi ius ei, ea has cetero argumentum, vel at fugit temporibus. Deseruisse definitionem his et, an has veri integre abhorreant, nam alii epicurei et.</div>
                <a href="/" class="cta">Learn more</a>
                <svg class="sml-arrow">
@@ -133,7 +157,7 @@
             <img class="illo-laptop" src="/images/illo-laptop.png" alt="Illustration of a figure having breakfast and looking at a laptop" width="462" height="297">
             
             <div class="X2">
-               <h4 class="subhead serif">Dolorem habemus mandamus ponderum</h4>
+               <h4 class="subhead u-header">Dolorem habemus mandamus ponderum</h4>
                <div class="body">Ea eos essent ornatus percipit, mea an persecuti pertinacia, te suas semper per. Et qui debet veritus, ei qui utroque luptatum sadipscing. His dolorem habemus mandamus et.</div>
                <a href="/" class="cta">Learn more</a>
                <svg class="sml-arrow">
