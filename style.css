@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5 {
    }
 }
 
-.head {
+.hero__head {
    display: flex;
    flex: 0 0 100%;
    justify-content: space-between;
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: 641px) {
-   .head {
+   .hero__head {
       padding: 16px 0;
    }
 }
@@ -332,6 +332,18 @@ h1, h2, h3, h4, h5 {
    }
 }
 
+@media (min-width: 641px) {
+   .about__split {
+      display: flex;
+      flex-wrap: wrap;
+   }
+}
+
+.about__head {
+   flex: 0 0 100%; 
+   padding-bottom: 42px;  
+}
+
 .about__title {
    font-size: var(--h3-size);
    line-height: var(--h3-line);
@@ -340,6 +352,10 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: 641px) {
+   .about__head {
+      padding-bottom: 54px;
+   }
+   
    .about__title {
       font-size: var(--h2-size);
       line-height: var(--h2-line); 
@@ -369,6 +385,22 @@ h1, h2, h3, h4, h5 {
    }
 }
 
+.about__illustration {
+   object-fit: contain;
+   max-width: calc(100% - 2%);
+   transform: translateX(2%);
+}
+
+@media (min-width: 641px) {
+   .about__illustration {
+      margin: 0 auto 54px;
+   }
+}
+
+
+
+
+
 
 
 /******************************
@@ -376,28 +408,33 @@ WORKING PROGRESS
 *******************************/
 
 
-
-
-
-
-
-
-/* WIP */
 @media (min-width: 641px) {
-   .about__split {
-      display: flex;
-      flex-wrap: wrap;
+   .about__content {
+      /* vertical-align: middle; */
+      max-width: calc((100%/12)*8);
+      /* margin: auto; */
+      /* max-width: 50%; */
+      /* max-width: 960px; */
+      /* padding: 95px 0 192px; */
    }
 }
 
-.xxxxx__title {
+
+
+
+
+
+
+
+/* NEEDS TO MATCH SECTION */
+.content__title {
    font-size: var(--h4-size);
    line-height: var(--h4-line);
    max-width: 70%;
    padding-bottom: 22px; 
 }
 
-.xxxxx__body {
+.content__body {
    font-size: var(--text-size);
    line-height: var(--text-line);
    color: var(--text-black-50);
@@ -405,18 +442,18 @@ WORKING PROGRESS
 } 
 
 @media (min-width: 641px) {
-   .xxxxx__title {
+   .content__title {
       font-size: var(--h3-size);
       line-height: var(--h3-line);
    }
    
-   .xxxxx__body {
+   .content__body {
       max-width: 470px;
       padding-bottom: 36px; 
    }
 }
 
-.xxxxx__link {
+.content__link {
    font-size: var(--text-size);
    line-height: var(--text-line);
    font-weight: var(--text-weight);
@@ -425,17 +462,13 @@ WORKING PROGRESS
    align-items: center;
 }
 
-.xxxxx__arrow {
+.content__arrow {
    margin-left: 8px;
    height: 12px;
    width: 8px;
 }
 
-.xxxxx__illustration {
-   object-fit: contain;
-   padding: 36px 0 40px;
-   /* max-width: calc(100% + 2%); */
-}
+
 
 
 
