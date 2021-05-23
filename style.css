@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5 {
    background-color: white;
    border-radius: 5px;
    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-   margin-bottom: 16px;
+   margin: 0 auto 16px;
    max-width: 370px;
    padding: 60px 18px 0 30px;
 }
@@ -335,7 +335,7 @@ h1, h2, h3, h4, h5 {
 
 /* About */
 .about {
-   padding: 64px 0; 
+   padding: 64px 0 60px; 
 }
 
 @media (min-width: 641px) {
@@ -343,17 +343,6 @@ h1, h2, h3, h4, h5 {
       padding: 64px 0 190px;
    }
 }
-
-
-
-
-.about__head {
-   flex: 0 0 100%; 
-   padding-bottom: 42px;  
-}
-
-
-
 
 .about__title {
    font-size: var(--h3-size);
@@ -363,10 +352,6 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: 641px) {
-   .about__head {
-      padding-bottom: 54px;
-   }
-   
    .about__title {
       font-size: var(--h2-size);
       line-height: var(--h2-line); 
@@ -385,7 +370,7 @@ h1, h2, h3, h4, h5 {
 .about__body {
    font-size: var(--text-big-size);
    line-height: var(--text-big-line);
-   margin-bottom: 24px;
+   padding-bottom: 66px;
    text-align: center;
 }
 
@@ -393,25 +378,48 @@ h1, h2, h3, h4, h5 {
    .about__body {
       margin: 0 auto 54px;
       max-width: 580px;
+      padding-bottom: 54px;
    }
 }
 
-.about__illustration {
+@media (min-width: 641px) {
+   .about__content {
+      max-width: calc((100%/12)*9); 
+      margin: auto; 
+      display: flex;
+   }
+}
+
+
+
+
+
+
+
+
+/* @media (min-width: 641px) {
+   .hero__content {
+      max-width: calc((100%/12)*6);
+      padding: 95px 0 192px;
+      z-index: 1;
+   }
+} */
+
+.about__illustrationA {
    max-width: calc(100% - 2%);
    object-fit: contain;
    transform: translateX(2%);
 }
 
+.about__illustrationB {
+   max-width: calc(100% + 2%);
+   object-fit: contain;
+   transform: translateX(-1%);
+}
 
-
-
-
-
-
-/******************************
-WORKING PROGRESS
-*******************************/
-
+.bottom {
+   padding-bottom: 74px;
+}
 
 @media (min-width: 641px) {
    .about__illustration {
@@ -420,14 +428,10 @@ WORKING PROGRESS
 }
 
 @media (min-width: 641px) {
-   .about__content {
-      /* vertical-align: middle; */
-      max-width: calc((100%/12)*10);
-      /* align-items: center; */
-      /* display: flex; */
+   .about__ABC {
+      /* max-width: calc((100%/12)*10);   */
+      /* max-width: 40%; */
       margin: auto;
-      /* max-width: 50%; */
-      /* max-width: 960px; */
    }
 }
 
@@ -435,6 +439,7 @@ WORKING PROGRESS
    font-size: var(--h4-size);
    line-height: var(--h4-line);
    max-width: 70%;
+   padding-top: 38px;
    padding-bottom: 22px; 
 }
 
@@ -452,7 +457,7 @@ WORKING PROGRESS
    }
    
    .content__body {
-      max-width: 470px;
+      /* max-width: 470px; */
       padding-bottom: 36px; 
    }
 }
@@ -460,22 +465,8 @@ WORKING PROGRESS
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /******************************
-IMAGES
+WORKING PROGRESS
 *******************************/
 
 .illo-laptop {
@@ -519,4 +510,16 @@ IMAGES
       height: 416px;
       width: 474px;
    } 
+}
+
+/* Next */
+.next {
+   background-color: var(--primary-1);
+   padding: 64px 0 386px; 
+}
+
+@media (min-width: 641px) {
+   .next {
+      /* padding: 64px 0 190px; */
+   }
 }
