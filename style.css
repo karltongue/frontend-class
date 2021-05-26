@@ -382,11 +382,24 @@ h1, h2, h3, h4, h5 {
    }
 }
 
+/******************************
+WORKING PROGRESS
+*******************************/
+
 @media (min-width: 641px) {
    .about__content {
-      max-width: calc((100%/12)*9); 
-      margin: auto; 
       display: flex;
+      flex-wrap: wrap;
+      /* max-width: calc((100%/12)*9);  */
+      max-width: calc((100%/12)*10); 
+      margin: auto; 
+      z-index: 1;
+   }
+   
+   .about__content:nth-of-type(3n) {
+      /* margin-top: 200px; */
+      background-color: red;
+      /* float: right; */
    }
 }
 
@@ -397,53 +410,57 @@ h1, h2, h3, h4, h5 {
 
 
 
-/* @media (min-width: 641px) {
-   .hero__content {
-      max-width: calc((100%/12)*6);
-      padding: 95px 0 192px;
-      z-index: 1;
-   }
+
+/* .test {
+   float: right;
+   justify-content: right;
 } */
 
-.about__illustrationA {
-   max-width: calc(100% - 2%);
+
+.about__illustration {
    object-fit: contain;
+}
+
+.about__illustration--draw {
+   max-width: calc(100% - 2%);
    transform: translateX(2%);
 }
 
-.about__illustrationB {
+.about__illustration--laptop {
    max-width: calc(100% + 2%);
-   object-fit: contain;
    transform: translateX(-1%);
 }
 
-.bottom {
-   padding-bottom: 74px;
-}
-
 @media (min-width: 641px) {
-   .about__illustration {
-      /* margin: 0 auto 54px; */
+   /* .about__illustration {
+      margin: 0 auto 54px;
+   } */
+   .about__illustration--draw {
+      margin-left: 50px;
+      /* margin: 0 auto 58px; */
+      /* margin-left: calc((100%/12)*0.6); */
+      object-position: right bottom;
    }
 }
 
+
 @media (min-width: 641px) {
-   .about__ABC {
-      /* max-width: calc((100%/12)*10);   */
-      /* max-width: 40%; */
-      margin: auto;
+   .about__XXX {
+      /* padding-top: 10px; */
+      /* margin: auto; */
+      max-width: 470px;
+      background: teal;
    }
 }
 
-.content__title {
+.XXX__title {
    font-size: var(--h4-size);
    line-height: var(--h4-line);
    max-width: 70%;
-   padding-top: 38px;
-   padding-bottom: 22px; 
+   padding: 38px 0 22px;
 }
 
-.content__body {
+.XXX__body {
    color: var(--text-black-50);
    font-size: var(--text-size);
    line-height: var(--text-line);
@@ -451,13 +468,14 @@ h1, h2, h3, h4, h5 {
 } 
 
 @media (min-width: 641px) {
-   .content__title {
+   .XXX__title {
       font-size: var(--h3-size);
       line-height: var(--h3-line);
+      max-width: 90%;
+      padding-top: 0;
    }
    
-   .content__body {
-      /* max-width: 470px; */
+   .XXX__body {
       padding-bottom: 36px; 
    }
 }
@@ -465,8 +483,13 @@ h1, h2, h3, h4, h5 {
 
 
 
+
+/* .bottom {
+   padding-bottom: 74px;
+} */
+
 /******************************
-WORKING PROGRESS
+IMAGES
 *******************************/
 
 .illo-laptop {
