@@ -382,8 +382,10 @@ h1, h2, h3, h4, h5 {
    }
 }
 
+
+
 /******************************
-WORKING PROGRESS
+WORKING PROGRESS – Need to discuss with Matt
 *******************************/
 
 @media (min-width: 641px) {
@@ -396,26 +398,11 @@ WORKING PROGRESS
       z-index: 1;
    }
    
-   .about__content:nth-of-type(3n) {
-      /* margin-top: 200px; */
-      background-color: red;
-      /* float: right; */
+   .about__content img:nth-of-type(2n) {
+      /* background: red; */
+      order: 4;
    }
 }
-
-
-
-
-
-
-
-
-
-/* .test {
-   float: right;
-   justify-content: right;
-} */
-
 
 .about__illustration {
    object-fit: contain;
@@ -427,29 +414,21 @@ WORKING PROGRESS
 }
 
 .about__illustration--laptop {
+   margin-top: 70px;
    max-width: calc(100% + 2%);
    transform: translateX(-1%);
 }
 
 @media (min-width: 641px) {
-   /* .about__illustration {
-      margin: 0 auto 54px;
-   } */
    .about__illustration--draw {
-      margin-left: 50px;
-      /* margin: 0 auto 58px; */
+      margin: 0 70px 168px 50px;
       /* margin-left: calc((100%/12)*0.6); */
-      object-position: right bottom;
+      /* transform: translateX(15%); */
    }
-}
-
-
-@media (min-width: 641px) {
-   .about__XXX {
-      /* padding-top: 10px; */
-      /* margin: auto; */
-      max-width: 470px;
-      background: teal;
+   
+   .about__illustration--laptop {
+      /* margin-left: 70px; */
+      transform: translateX(7%);
    }
 }
 
@@ -468,15 +447,21 @@ WORKING PROGRESS
 } 
 
 @media (min-width: 641px) {
+   .about__XXX {
+      margin-top: 20px;
+      max-width: 470px;
+      /* background: teal; */
+   }
+   
    .XXX__title {
       font-size: var(--h3-size);
       line-height: var(--h3-line);
       max-width: 90%;
-      padding-top: 0;
+      padding: 0 0 36px;
    }
    
    .XXX__body {
-      padding-bottom: 36px; 
+      padding-bottom: 40px;
    }
 }
 
@@ -484,9 +469,6 @@ WORKING PROGRESS
 
 
 
-/* .bottom {
-   padding-bottom: 74px;
-} */
 
 /******************************
 IMAGES
