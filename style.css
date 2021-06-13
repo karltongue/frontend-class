@@ -37,6 +37,11 @@
    --text-small-size: 12px;
    --text-small-line: 24px;
    --text-weight: 700;
+   
+   --col1: 8.3333%;
+   --col2: calc(var(--col1) * 2);
+   --col3: calc(var(--col1) * 3);
+   --col10: calc(var(--col1) * 10);
 }
 
 /* Elements */
@@ -284,14 +289,14 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: 641px) {
-   .intro__cards {
+   .intro__item {
       display: grid;
       gap: 30px;
       grid-template-columns: repeat(3, minmax(0, 1fr));
    }
 }
 
-.card {
+.item {
    background-color: white;
    border-radius: 5px;
    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
@@ -300,21 +305,21 @@ h1, h2, h3, h4, h5 {
    padding: 60px 18px 0 30px;
 }
 
-.card__icon {
+.item__icon {
    height: 126px;
    margin: 0 auto 47px;
    transform: translateX(-6px);
    width: 186px;
 }
 
-.card__title {
+.item__title {
    font-size: var(--h4-size);
    line-height: var(--h4-line); 
    max-width: 70%;
    padding-bottom: 14px;
 }
 
-.card__body {
+.item__body {
    color: var(--text-black-50);
    font-size: var(--text-size);
    line-height: var(--text-line); 
@@ -322,12 +327,12 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: 641px) {
-   .card__body {
+   .item__body {
       max-width: 90.5%;
    }
 }
 
-.card__line {
+.item__line {
    border-top: 1px solid rgba(0, 0, 0, 0.1);
    margin-right: -18px;
    padding: 20px 0;
@@ -335,12 +340,16 @@ h1, h2, h3, h4, h5 {
 
 /* About */
 .about {
-   padding: 64px 0 60px; 
+   padding: 64px 0 34px; 
 }
 
 @media (min-width: 641px) {
    .about {
-      padding: 64px 0 190px;
+      padding: 64px 0 12px;
+   }
+   
+   .about__wrap {
+      max-width: 1000px;
    }
 }
 
@@ -370,7 +379,7 @@ h1, h2, h3, h4, h5 {
 .about__body {
    font-size: var(--text-big-size);
    line-height: var(--text-big-line);
-   padding-bottom: 66px;
+   padding-bottom: 70px;
    text-align: center;
 }
 
@@ -382,64 +391,61 @@ h1, h2, h3, h4, h5 {
    }
 }
 
-
-
-/******************************
-WORKING PROGRESS – Need to discuss with Matt
-*******************************/
+.about__content, 
+.about__content {
+   padding-bottom: 26px;
+}
 
 @media (min-width: 641px) {
+   .about__content, 
    .about__content {
-      display: flex;
-      flex-wrap: wrap;
-      /* max-width: calc((100%/12)*9);  */
-      max-width: calc((100%/12)*10); 
-      margin: auto; 
-      z-index: 1;
+      padding-bottom: 164px;
    }
    
-   .about__content img:nth-of-type(2n) {
-      /* background: red; */
-      order: 4;
+   .about__content {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      z-index: 1;
+   }
+
+   .about__content:nth-of-type(odd) 
+   .about__image {
+      order: 1;
+   }
+}
+
+.about__image {
+   display: flex;
+   max-width: calc(100% + 8%);
+}
+
+@media (min-width: 641px) {
+   .about__image {
+      max-width: none;
    }
 }
 
 .about__illustration {
-   object-fit: contain;
-}
-
-.about__illustration--draw {
-   max-width: calc(100% - 2%);
-   transform: translateX(2%);
-}
-
-.about__illustration--laptop {
-   margin-top: 70px;
-   max-width: calc(100% + 2%);
-   transform: translateX(-1%);
+   margin: 0 -4%;
+   max-width: calc(100% + 8%);
 }
 
 @media (min-width: 641px) {
-   .about__illustration--draw {
-      margin: 0 70px 168px 50px;
-      /* margin-left: calc((100%/12)*0.6); */
-      /* transform: translateX(15%); */
-   }
-   
-   .about__illustration--laptop {
-      /* margin-left: 70px; */
-      transform: translateX(7%);
+   .about__illustration {
+      margin: 0;
+      max-width: 100%;
    }
 }
 
-.XXX__title {
+.about__itemTitle {
    font-size: var(--h4-size);
    line-height: var(--h4-line);
    max-width: 70%;
-   padding: 38px 0 22px;
+   padding: 40px 0 22px;
 }
 
-.XXX__body {
+.about__itemBody {
    color: var(--text-black-50);
    font-size: var(--text-size);
    line-height: var(--text-line);
@@ -447,84 +453,95 @@ WORKING PROGRESS – Need to discuss with Matt
 } 
 
 @media (min-width: 641px) {
-   .about__XXX {
+   .about__item {
       margin-top: 20px;
-      max-width: 470px;
-      /* background: teal; */
+      padding-bottom: 0;
    }
    
-   .XXX__title {
+   .about__itemTitle {
       font-size: var(--h3-size);
       line-height: var(--h3-line);
       max-width: 90%;
       padding: 0 0 36px;
    }
    
-   .XXX__body {
+   .about__itemBody {
       padding-bottom: 40px;
    }
 }
 
+/******************************
+NEXT – WIP
+*******************************/
 
+/* Next */
+.next {
+   padding: 62px 0 384px; 
+}
+
+.next:after {
+   background-color: var(--primary-1);
+   content: ' ';
+   display: block;
+   height: 780px;
+   /* position: absolute; */
+}
+
+.next__content {
+   color: var(--text-white);
+}
+
+@media (min-width: 641px) {
+   .next {
+      padding: 78px 0 160px;
+   }
+}
+
+.next__title {
+   font-size: var(--h3-size);
+   line-height: var(--h3-line);
+   margin: 20px 0 32px;
+   text-align: center;
+}
+
+@media (min-width: 641px) {
+   .next__title {
+      font-size: var(--h2-size);
+      line-height: var(--h2-line); 
+      margin: 22px 0 28px;
+   }
+}
+
+.next__subtitle {
+   font-size: var(--h5-size);
+   letter-spacing: var(--h5-space);
+   line-height: var(--h5-line);
+   text-align: center;
+   text-transform: uppercase;
+}
+
+.next__body {
+   font-size: var(--text-big-size);
+   line-height: var(--text-big-line);
+   padding-bottom: 38px;
+   text-align: center;
+}
+
+@media (min-width: 641px) {
+   .next__body {
+      margin: 0 auto 18px;
+      max-width: 570px;
+      padding-bottom: 54px;
+   }
+}
 
 
 
 
 /******************************
-IMAGES
+WORKING PROGRESS
 *******************************/
 
-.illo-laptop {
-   /* height: 224px; */
-   object-fit: contain;
-   padding: 70px 0 40px;
-   /* width: 351px; */
-}
-
-@media (min-width: 641px) {
-   .illo-draw {
-      height: 315px;
-      width: 383px;
-   }
+.next__item {
    
-   .illo-laptop {
-      height: 297px;
-      width: 462px;
-   }
-}
-
-.illo-walk {
-   height: 405px;
-   width: 252px;
-}
-
-@media (min-width: 641px) {
-   .illo-walk {
-      height: 510px;
-      width: 317px;
-   }
-}
-
-.illo-cycle {
-   height: 303px;
-   width: 346px;
-} 
-
-@media (min-width: 641px) {
-   .illo-cycle {
-      height: 416px;
-      width: 474px;
-   } 
-}
-
-/* Next */
-.next {
-   background-color: var(--primary-1);
-   padding: 64px 0 386px; 
-}
-
-@media (min-width: 641px) {
-   .next {
-      /* padding: 64px 0 190px; */
-   }
 }
