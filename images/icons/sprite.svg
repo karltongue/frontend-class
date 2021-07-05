@@ -56,6 +56,9 @@
       <path fill-rule="evenodd" clip-rule="evenodd" d="M43.5 6H142.5L155.7 30H159V36V54H153V120H33V54H27V36V30H30.3L43.5 6ZM37.1476 30H148.852L138.952 12H47.0476L37.1476 30ZM33 36V48H63H123H153V36H33ZM39 114V54H63V72H123V54H147V114H39ZM69 66V54H117V66H69Z" fill="url(#paint0_linear)"/>
    </symbol>
   
+   <symbol viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" id="u_expand">
+     <path fill-rule="evenodd" clip-rule="evenodd" d="M11 18.9914C11 19.5491 10.552 20 10 20C9.447 20 9 19.5491 9 18.9914V11H1.00862C0.451863 11 0 10.553 0 10C0 9.448 0.451863 9 1.00862 9H9V1.00862C9 0.451863 9.447 0 10 0C10.552 0 11 0.451863 11 1.00862V9H18.9914C19.5491 9 20 9.448 20 10C20 10.553 19.5491 11 18.9914 11H11V18.9914Z"/>
+    </symbol> 
    
    <symbol viewBox="0 0 13 21" xmlns="http://www.w3.org/2000/svg" id="u_arrow_right">
       <path fill-rule="evenodd" clip-rule="evenodd" d="M0.147135 19.4445L2.26106 21.5L13 11.058L2.14183 0.5L0 2.58262L8.74424 11.0851L0.147135 19.4445Z"/>
