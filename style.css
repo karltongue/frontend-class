@@ -515,10 +515,15 @@ h1, h2, h3, h4, h5 {
    text-transform: uppercase;
 }
 
+/******************************
+WORKING PROGRESS
+*******************************/
+
 .next__body {
    font-size: var(--text-big-size);
    line-height: var(--text-big-line);
-   padding-bottom: 38px;
+   padding-bottom: 66px;
+   /* padding-bottom: 38px; */
 }
 
 @media (min-width: 641px) {
@@ -529,37 +534,30 @@ h1, h2, h3, h4, h5 {
    }
 }
 
-/******************************
-WORKING PROGRESS
-*******************************/
-
 .next__card {
-   color: var(--text-white);
    display: grid;
-   grid-template-columns: repeat(2, minmax(0, 1fr));
-   gap: 30px;
+   grid-template-columns: repeat(1, minmax(0, 1fr));
+   gap: 18px;
 }
 
 @media (min-width: 641px) {
    .next__card {
-      grid-template-columns: none;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 32px;
    }
 }
 
 .card {
    background-color: var(--primary-2);
    border-radius: 5px;
+   /* color: var(--text-white); */
    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-   padding: 60px 18px 0 30px;
-}
-
-.card:first-of-type {
-   grid-column: 1 / span 2;
+   position: relative;
 }
 
 @media (min-width: 641px) {
-   .next__card {
-      grid-column: 4;
+   .card:first-of-type {
+      grid-column: 1 / span 2;
    }
 }
 
@@ -571,33 +569,72 @@ WORKING PROGRESS
    background-color: #428DFC;
 }
 
+.card__image {
+   border-radius: 5px;
+   /* height: 512px; */
+   height: auto;
+   position: absolute;
+   inset: auto 0 0 auto;
+}
+
+@media (min-width: 641px) {
+   .card__image:first-of-type {
+      inset: 0px 0px 0px;
+   }
+}
+.card__item {
+   /* padding: 30px 0 100px 28px; */
+   padding: 30px 0 260px 28px;
+   /* padding: 30px 0 0 28px; */
+}
+
+@media (min-width: 641px) {
+   .card__item:first-of-type {
+      padding: 110px 28px 142px 100px;
+   }
+   
+   .card__item {
+      padding: 94px 0 0 100px;
+   }
+}
+
+
 .card__subtitle {
    font-size: var(--h5-size);
    line-height: var(--h5-line);
-   color: var(--text-white-50);
 }
 
 .card__title {
    font-size: var(--h3-size);
    line-height: var(--h3-line);
+   margin: 4px 0 22px;
 }
 
 @media (min-width: 641px) {
    .card__title {
       font-size: var(--h2-size);
       line-height: var(--h2-line);
+      margin: 24px 0 36px;
+      width: 50%;
    }
 }
 
-.card__sectionTitle {
+.card__header {
    font-size: var(--h4-size);
    line-height: var(--h4-line); 
+   margin: 18px 0 24px;
+   max-width: 38%;
+}
+
+@media (min-width: 641px) {
+   .card__header {
+      margin: 18px 0 24px;
+   }
+}
+
+.card__expand {
+   height: 20px;
+   /* width: 20px; */
 }
 
 
-
-
-
-.next__item {
-   
-}
