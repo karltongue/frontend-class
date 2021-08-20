@@ -967,3 +967,11 @@ WORKING PROGRESS
    line-height: var(--text-line);
    padding-bottom: 16px;
 }
+
+.features__icon {
+   background-color: red;
+   height: 60px;
+   /* margin: 0 -4.5%; */
+   max-width: calc(100% + 9%);
+   width: 60px;
+}
